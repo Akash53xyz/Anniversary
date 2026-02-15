@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Eternal Love Story</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="music-player" onclick="toggleMusic()">
+        <div id="music-disc" class="disc">🎵</div>
+        <audio id="loveSong" loop>
+            <source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div id="particle-container"></div>
+
+    <div class="wrapper">
+        <section class="page active" id="p1">
+            <h1 class="glow-text">Happy Anniversary, My Love ❤️</h1>
+            <div class="heart-grid single">
+                <div class="heart-clip shadow-pulse">
+                    <img src="photo1.jpg" alt="Our first date" class="anniversary-img">   
+                </div>
+            </div>
+            <p class="romantic-text">Today is a celebration of us. Ready to revisit our magic?</p>
+            <button class="btn-shine" onclick="nextPage(2)">Enter Our World ✨</button>
+        </section>
+
+        <section class="page" id="p2">
+            <h2 class="title-font">Our Favorite Moments 📸</h2>
+            <div class="heart-grid multiple">
+                <div class="heart-clip small"><img src= "photo2.jpg"></div>
+                <div class="heart-clip small"><img src="photo3.jpg"></div>
+                <div class="heart-clip small"><img src="photo4.jpg"></div>
+            </div>
+            <p class="romantic-text">Every smile shared with you is a memory I treasure forever.</p>
+            <button class="btn-shine" onclick="nextPage(3)">Keep Walking 🌹</button>
+        </section>
+
+        <section class="page" id="p3">
+            <h2 class="title-font">The Question... 💍</h2>
+            <div class="gif-container">
+                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHY5bXF6ZXZyc3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/l41lTfuxV3e4tK8z6/giphy.gif" alt="Proposal GIF">
+            </div>
+            <p class="romantic-text">"I’d choose you in a hundred lifetimes, in any version of reality."</p>
+            <div class="btn-group">
+                <button class="btn-shine" onclick="nextPage(4)">I Still Do! 🥰</button>
+            </div>
+        </section>
+
+        <section class="page" id="p10">
+            <h1 class="glow-text">To Forever & Beyond ♾️</h1>
+            <div class="heart-grid multiple">
+                <div class="heart-clip"><img src="https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=400"></div>
+            </div>
+            <p class="romantic-text">You are my today and all of my tomorrows. <br> Happy Anniversary!</p>
+            <button class="btn-shine" onclick="nextPage(1)">Restart Love Story</button>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
